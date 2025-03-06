@@ -1,50 +1,89 @@
-# 🌍 Descubra Suas Origens com Machine Learning! 🚀
+# 🌍 Classificador de Nacionalidade com Árvore de Decisão
 
-## 🔥 Sobre o Projeto
-Este projeto utiliza **Árvores de Decisão** para prever a sua possível ascendência com base em características físicas como cor dos olhos, cabelo, altura e cor da pele. A inteligência artificial analisa suas respostas e fornece probabilidades de ancestralidade em diferentes regiões do mundo! 🌎✨
+Este projeto utiliza a biblioteca `scikit-learn` para criar um modelo de aprendizado de máquina baseado em **Árvore de Decisão**. O objetivo é prever a possível **nacionalidade** de uma pessoa com base em suas características físicas, como cor dos olhos, cabelo, altura e tom de pele.
+
+## 🚀 Como Funciona?
+1. O usuário insere suas características físicas.
+2. O modelo de **Árvore de Decisão** faz a predição com base em dados pré-treinados.
+3. O programa retorna a **probabilidade** de você pertencer a determinada nacionalidade.
+
+---
 
 ## 🛠 Tecnologias Utilizadas
-- 🧠 **Scikit-learn**: Para criar e treinar o modelo de **Árvore de Decisão**.
-- 🎨 **Colorama**: Para deixar o terminal mais interativo e colorido.
-- ⏳ **Time**: Para criar animações sutis e tornar a experiência mais fluida.
 
-## 🎯 Como Funciona?
-1. Você responde a algumas perguntas sobre suas características físicas.
-2. O modelo processa suas respostas e **estima sua possível ascendência**.
-3. O resultado aparece no terminal, destacando **os países e regiões** com maior probabilidade!
+- `Python 3.x`
+- `scikit-learn` (Machine Learning)
+- `colorama` (Para saída colorida no terminal)
+- `time` (Para efeitos visuais)
 
-## 🚀 Como Rodar o Projeto
-### 1️⃣ Instale as dependências
+---
+
+## 📥 Instalação e Configuração
+
+1. **Clone o repositório:**
 ```bash
-pip install -r requirements.txt
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+2. **Entre no diretório:**
+```bash
+    cd seu-repositorio
+```
+3. **Crie um ambiente virtual (opcional):**
+```bash
+    python -m venv venv
+    source venv/bin/activate  # Linux/macOS
+    venv\Scripts\activate  # Windows
+```
+4. **Instale as dependências:**
+```bash
+    pip install -r requirements.txt
 ```
 
-### 2️⃣ Execute o programa
+---
+
+## 🎯 Como Usar
+
+1. **Execute o script:**
 ```bash
-python main.py
+    python script.py
+```
+2. **Responda às perguntas sobre suas características físicas:**
+   - Cor dos olhos (verdes, azuis, castanhos)
+   - Cor do cabelo (castanhos, loiros, ruivos)
+   - Altura (em cm ou metros)
+   - Cor da pele (branca, amarela, negra)
+
+3. **Resultado:** O modelo irá exibir a nacionalidade mais provável com a porcentagem de confiança!
+
+---
+
+## 🧠 Explicação do Modelo
+
+O modelo é treinado com um conjunto de dados fictício que mapeia características físicas a diferentes nacionalidades. Ele usa uma **Árvore de Decisão** para prever a nacionalidade mais provável com base nas entradas do usuário.
+
+### 🔹 Exemplo de Entrada e Saída
+```
+Qual a Cor dos Seus Olhos? ➜ azuis
+Qual a Cor dos seus Cabelos? ➜ loiros
+Qual é a sua Altura? ➜ 1.75
+Qual é a Cor de Sua Pele? ➜ branca
+```
+**Saída esperada:**
+```
+Existe uma Probabilidade de 85% de Você ser/ter Descendência do País: PAÍSES NÓRDICOS
 ```
 
-## 📝 Exemplo de Uso
-```bash
-🔹 Qual a Cor dos Seus Olhos? (verdes, azuis, castanhos)
-🔹 Qual a Cor dos seus Cabelos? (castanhos, loiros, ruivos)
-🔹 Qual é a sua Altura? (em cm, ex: 175)
-🔹 Qual é a Cor de Sua Pele? (branca, amarela, negra)
-```
-🎉 **Saída Esperada:**
-```bash
-📍 Existe uma Probabilidade de 80% de Você ser/ter Descendência do País: Alemanha
-```
+---
 
-## 🤩 Recursos Especiais
-✅ Interface interativa no terminal 📟
-✅ Mensagens coloridas para melhor experiência 🎨
-✅ Respostas rápidas e precisas ⚡
-✅ Base de dados com múltiplos países 🌎
+## ⚠️ Observação
+Este programa é apenas uma simulação e **não deve ser usado para fins científicos ou antropológicos reais**. O modelo foi criado para fins educacionais e recreativos.
 
-## 📌 Contribuições
-Sinta-se à vontade para **melhorar** e **expandir** o código! 🚀
+---
 
-## 📧 Contato
-Dúvidas? Sugestões? Entre em contato!
-📩 Email: seuemail@example.com
+## 📌 Melhorias Futuras
+- [ ] Adicionar mais características para melhorar a precisão.
+- [ ] Expandir a base de dados para incluir mais nacionalidades.
+- [ ] Criar uma interface gráfica para melhor experiência do usuário.
+
+🚀 **Divirta-se explorando suas possíveis origens!** 🌎
+
